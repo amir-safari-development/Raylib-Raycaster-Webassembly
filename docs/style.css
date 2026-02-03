@@ -1,4 +1,5 @@
 :root {
+  --accent-color: #e74c3c;
   --primary-color: #1a1a1a;
   --text-color: #333;
   --bg-light: #f8f9fa;
@@ -23,7 +24,7 @@ body {
 }
 
 .hamburger {
-  display: none; /* Hidden by default on desktop */
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
@@ -109,7 +110,7 @@ body {
 }
 
 .cta-button {
-  background-color: #e74c3c;
+  background-color: var(--accent-color);
   color: var(--white);
   padding: 12px 24px;
   text-decoration: none;
