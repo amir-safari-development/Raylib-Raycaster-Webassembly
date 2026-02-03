@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - RayCaster Pro</title>
+    <link rel="stylesheet" href="simpleLightbox.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-brand">RayCaster Pro</div>
+
+      <button class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="devlog.html">Devlog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="./web-demo/game.html">Live Demo</a></li>
+      </ul>
+    </nav>
+
+    <section class="gallery-section">
+      <h2 class="project-gallery">Project Gallery</h2>
+
+      <div class="gallery-flex">
+        <div class="image-wrapper">
+          <div class="gallery-item">
+            <a href="./images/3d-view.png">
+              <img src="./images/3d-view.png" alt="3D Gameplay View" />
+            </a>
+          </div>
+          <p class="caption">3D Gameplay View</p>
+        </div>
+
+        <div class="image-wrapper">
+          <div class="gallery-item">
+            <a href="./images/minimap.png">
+              <img src="./images/minimap.png" alt="2D Minimap" />
+            </a>
+          </div>
+          <p class="caption">2D Minimap</p>
+        </div>
+
+        <div class="image-wrapper">
+          <div class="gallery-item">
+            <a href="./images/linux-proof.png">
+              <img src="./images/linux-proof.png" alt="Verified on Ubuntu Linux" />
+            </a>
+          </div>
+          <p class="caption">Verified on Ubuntu Linux</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Developed by Amirreza Safari | Student ID: 404521426</p>
+      <p>&copy; 2026 Open Source License</p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./simpleLightbox.js"></script>
+    <script>
+      new SimpleLightbox({ elements: ".gallery-item a" });
+    </script>
+  </body>
+</html>

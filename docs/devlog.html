@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devlog - RayCaster Pro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-brand">RayCaster Pro</div>
+
+      <button class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="devlog.html">Devlog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="./web-demo/game.html">Live Demo</a></li>
+      </ul>
+    </nav>
+
+    <div class="devlog-container">
+      <h1>Technical Documentation</h1>
+      <br />
+
+      <article>
+        <section>
+          <h3>Understanding Raycasting Logic</h3>
+          <p>
+            Our engine transforms a simple 2D grid map into a 3D perspective by casting rays from the player's position.
+            For every vertical column on the screen, a ray is fired. We calculate the distance to the nearest wall using
+            trigonometry and the DDA algorithm. This distance determines the height of the wall slice drawn on the
+            screen, creating the illusion of depth.
+          </p>
+        </section>
+      </article>
+
+      <article>
+        <section>
+          <h3>Development Challenges</h3>
+          <p>
+            The most significant bug encountered during development was the "Fisheye Effect," where walls looked
+            distorted at the edges of the screen. This occurred because rays at the edge of the FOV traveled longer
+            distances than center rays. We solved this by multiplying the distance by the cosine of the angle difference
+            between the ray and the player's viewing direction.
+          </p>
+        </section>
+      </article>
+    </div>
+
+    <footer>
+      <p>Developed by Amirreza Safari | Student ID: 404521426</p>
+      <p>&copy; 2026 Open Source License</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

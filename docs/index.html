@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RayCaster Pro - The Future of Retro</title>
+    <link rel="stylesheet" href="simpleLightbox.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-brand">RayCaster Pro</div>
+
+      <button class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="devlog.html">Devlog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="./web-demo/game.html">Live Demo</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <h1>RayCaster Pro Engine</h1>
+      <p>A nostalgic experience with modern performance</p>
+      <br />
+      <a href="https://github.com/amir-safari-development/Raylib-Raycaster" class="cta-button">Download Source</a>
+    </header>
+
+    <section class="features-section">
+      <h2>Engine Capabilities</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <a href="./images/dda.png">
+            <img src="./images/dda.png" alt="DDA Algorithm Icon" />
+          </a>
+          <h3>DDA Algorithm</h3>
+          <p>High-precision ray calculations using Digital Differential Analysis.</p>
+        </div>
+        <div class="feature-card">
+          <a href="./images/fps.png">
+            <img src="./images/fps.png" alt="FPS Icon" />
+          </a>
+          <h3>60+ FPS</h3>
+          <p>Optimized C code ensuring smooth gameplay on all systems.</p>
+        </div>
+        <div class="feature-card">
+          <a href="./images/texture.png">
+            <img src="./images/texture.png" alt="Textures Icon" />
+          </a>
+          <h3>Textured Walls</h3>
+          <p>Immersive environments with full texture mapping support.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Developed by Amirreza Safari | Student ID: 404521426</p>
+      <p>&copy; 2026 Open Source License</p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./simpleLightbox.js"></script>
+    <script>
+      new SimpleLightbox({ elements: ".feature-card a" });
+    </script>
+  </body>
+</html>
