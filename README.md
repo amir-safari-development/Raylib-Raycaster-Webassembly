@@ -20,7 +20,7 @@
 
   <br>
 
-  <a href="https://amir-safari-development.github.io/Raylib-Raycaster/">
+  <a href="https://raylib-raycaster.netlify.app/">
     <img src="https://img.shields.io/badge/🌐_View_Project_Website-Live_Demo-2ea44f?style=for-the-badge" alt="Website Link">
   </a>
 
