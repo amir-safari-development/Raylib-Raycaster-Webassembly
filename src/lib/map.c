@@ -54,3 +54,32 @@ void InitEditMap()
             WORLD_MAP[(int)(GetMouseY() / TILE_SIZE)][(int)(GetMouseX() / TILE_SIZE)] = 0;
     }
 }
+
+void LoadMap(int map[ROWS][COLUMNS], const char *filename) {
+    FILE *file = fopen(filename, "r");
+
+    if (file == NULL) return;
+
+    for (int i = 0; i < ROWS; i++) {
+        for (int j = 0;j < COLUMNS; j++) {
+            if (fscanf(file,"%d", &map[i][j]) != 1) break;
+        }
+    }
+
+    fclose(file);
+}
+
+void SaveMap(int map[ROWS][COLUMNS], const char *filename) {
+    FILE *file = fopen(filename, "w");
+
+    if (file == NULL) return;
+
+    for (int i = 0; i < ROWS; i++) {
+        for (int j = 0; j < COLUMNS; j++) {
+            fprintf(file, "%d ", map[i][j]);
+        }
+        fprintf(file, "\n");
+    }
+
+    fclose(file);
+}

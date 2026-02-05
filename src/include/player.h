@@ -2,6 +2,7 @@
 #define PLAYER_H
 
 #include <math.h>
+#include <stdio.h>
 #include "map.h"
 #include "raylib.h"
 

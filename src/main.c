@@ -10,6 +10,7 @@ int main()
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Raycaster");
     SetTargetFPS(60);
 
+    LoadMap(WORLD_MAP, "map.txt");
     PlacePlayer();
 
     while (!WindowShouldClose())
@@ -18,6 +19,9 @@ int main()
 
         if (IsKeyPressed(KEY_M))
             mode = mode == STATE_2D ? STATE_3D : STATE_2D;
+
+        if (IsKeyPressed(KEY_F5)) SaveMap(WORLD_MAP, "map.txt");
+        if (IsKeyPressed(KEY_F9)) LoadMap(WORLD_MAP, "map.txt"); 
 
         InitMobility(BASE_SPEED * deltaTime);
         InitRotation(BASE_ROT_SPEED * deltaTime);

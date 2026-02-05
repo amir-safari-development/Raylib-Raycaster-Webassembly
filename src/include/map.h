@@ -23,5 +23,7 @@ extern int WORLD_MAP[ROWS][COLUMNS];
 
 void DrawMap(int mode);
 void InitEditMap();
+void LoadMap(int map[ROWS][COLUMNS], const char *filename);
+void SaveMap(int map[ROWS][COLUMNS], const char *filename);
 
 #endif
